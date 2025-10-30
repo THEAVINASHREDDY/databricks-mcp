@@ -138,6 +138,58 @@ This will automatically install the MCP server using `uvx` and configure it in C
 - `DATABRICKS_TOKEN` - Your Databricks personal access token  
 - `DATABRICKS_WAREHOUSE_ID` - (Optional) Your default SQL warehouse ID
 
+### 🔧 Local Installation (Development & Latest Features)
+
+**Want to use the latest bug fixes and features?** Install from source for development or to get the most recent improvements.
+
+👉 **[Quick Start Guide →](QUICKSTART.md)** | **[Detailed Instructions →](INSTALLATION.md)**
+
+#### Quick Local Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/THEAVINASHREDDY/databricks-mcp.git
+cd databricks-mcp
+
+# 2. Install in editable mode
+pip install -e .
+
+# 3. Configure mcp.json with your credentials + PYTHONPATH
+```
+
+**Benefits of Local Installation:**
+- ✅ Get latest bug fixes immediately (see [FIXES_SUMMARY.md](FIXES_SUMMARY.md))
+- ✅ Code changes take effect instantly (editable install)
+- ✅ Full control over the installation
+- ✅ Easy to contribute improvements back
+
+**Configuration for Local Install:**
+
+Update your `~/.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "databricks-mcp": {
+      "command": "python",
+      "args": ["-m", "databricks_mcp.server.databricks_mcp_server"],
+      "env": {
+        "DATABRICKS_HOST": "https://your-workspace.databricks.com",
+        "DATABRICKS_TOKEN": "dapiXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "DATABRICKS_WAREHOUSE_ID": "sql_warehouse_xxxxx",
+        "PYTHONPATH": "/absolute/path/to/databricks-mcp"
+      }
+    }
+  }
+}
+```
+
+**Documentation:**
+- 🚀 [QUICKSTART.md](QUICKSTART.md) - Get started in 5 minutes
+- 📦 [INSTALLATION.md](INSTALLATION.md) - Detailed platform-specific instructions
+- 🔧 [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Common issues and solutions
+- 🐛 [FIXES_SUMMARY.md](FIXES_SUMMARY.md) - Latest bug fixes and improvements
+
 ### Manual Installation
 
 #### Prerequisites
