@@ -1,26 +1,3 @@
-# Databricks MCP Server
-
-A Model Completion Protocol (MCP) server for Databricks that provides access to Databricks functionality via the MCP protocol. This allows LLM-powered tools to interact with Databricks clusters, jobs, notebooks, and more.
-
-> **Version 0.3.1** - Latest release with issue #9 fix and enhanced MCP client compatibility.
-
-## 🚀 One-Click Install
-
-### For Cursor Users
-**Click this link to install instantly:**
-```
-cursor://anysphere.cursor-deeplink/mcp/install?name=databricks-mcp&config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJkYXRhYnJpY2tzLW1jcC1zZXJ2ZXIiXSwiZW52Ijp7IkRBVEFCUklDS1NfSE9TVCI6IiR7REFUQUJSSUNLU19IT1NUfSIsIkRBVEFCUklDS1NfVE9LRU4iOiIke0RBVEFCUklDS1NfVE9LRU59IiwiREFUQUJSSUNLU19XQVJFSE9VU0VfSUQiOiIke0RBVEFCUklDS1NfV0FSRUhPVVNFX0lEfSJ9fQ==
-```
-
-**Or copy and paste this deeplink:**
-`cursor://anysphere.cursor-deeplink/mcp/install?name=databricks-mcp&config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJkYXRhYnJpY2tzLW1jcC1zZXJ2ZXIiXSwiZW52Ijp7IkRBVEFCUklDS1NfSE9TVCI6IiR7REFUQUJSSUNLU19IT1NUfSIsIkRBVEFCUklDS1NfVE9LRU4iOiIke0RBVEFCUklDS1NfVE9LRU59IiwiREFUQUJSSUNLU19XQVJFSE9VU0VfSUQiOiIke0RBVEFCUklDS1NfV0FSRUhPVVNFX0lEfSJ9fQ==`
-
-**[→ Install Databricks MCP in Cursor ←](cursor://anysphere.cursor-deeplink/mcp/install?name=databricks-mcp&config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJkYXRhYnJpY2tzLW1jcC1zZXJ2ZXIiXSwiZW52Ijp7IkRBVEFCUklDS1NfSE9TVCI6IiR7REFUQUJSSUNLU19IT1NUfSIsIkRBVEFCUklDS1NfVE9LRU4iOiIke0RBVEFCUklDS1NfVE9LRU59IiwiREFUQUJSSUNLU19XQVJFSE9VU0VfSUQiOiIke0RBVEFCUklDS1NfV0FSRUhPVVNFX0lEfSJ9fQ==)**
-
-This project is maintained by Olivier Debeuf De Rijcker <olivier@markov.bot>.
-
-Credit for the initial version goes to [@JustTryAI](https://github.com/JustTryAI/databricks-mcp-server).
-
 ## Features
 
 - **MCP Protocol Support**: Implements the MCP protocol to allow LLMs to interact with Databricks
@@ -109,14 +86,7 @@ The Databricks MCP Server exposes the following tools:
 **Backwards Compatibility:** All existing MCP tools continue to work unchanged. New features extend functionality without breaking changes.
 
 ## Installation
-
-### Quick Install (Recommended)
-
-Use the link above to install with one click:
-
-**[→ Install Databricks MCP in Cursor ←](cursor://anysphere.cursor-deeplink/mcp/install?name=databricks-mcp&config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJkYXRhYnJpY2tzLW1jcC1zZXJ2ZXIiXSwiZW52Ijp7IkRBVEFCUklDS1NfSE9TVCI6IiR7REFUQUJSSUNLU19IT1NUfSIsIkRBVEFCUklDS1NfVE9LRU4iOiIke0RBVEFCUklDS1NfVE9LRU59IiwiREFUQUJSSUNLU19XQVJFSE9VU0VfSUQiOiIke0RBVEFCUklDS1NfV0FSRUhPVVNFX0lEfSJ9fQ==)**
-
-This will automatically install the MCP server using `uvx` and configure it in Cursor. You'll need to set these environment variables:
+You'll need to set these environment variables:
 
 - `DATABRICKS_HOST` - Your Databricks workspace URL
 - `DATABRICKS_TOKEN` - Your Databricks personal access token  
@@ -524,4 +494,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## About
 
- A Model Completion Protocol (MCP) server for interacting with Databricks services. Maintained by markov.bot. 
+ A Model Completion Protocol (MCP) server for interacting with Databricks services.
+
+Credit for the initial version goes to [@JustTryAI](https://github.com/JustTryAI/databricks-mcp-server).
