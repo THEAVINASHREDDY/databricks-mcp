@@ -1,6 +1,6 @@
 # 🚀 Quick Start Guide
 
-Get your Databricks MCP server running in **5 minutes**!
+Get your Databricks MCP server running!
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ Before you begin, make sure you have:
 
 ---
 
-## Step 1: Clone & Install (2 minutes)
+## Step 1: Clone & Install
 
 ```bash
 # Clone the repository
@@ -28,7 +28,7 @@ pip install -e .
 
 ---
 
-## Step 2: Get Your Databricks Credentials (1 minute)
+## Step 2: Get Your Databricks Credentials
 
 You need three pieces of information:
 
@@ -43,7 +43,7 @@ You need three pieces of information:
 
 ---
 
-## Step 3: Configure Cursor (2 minutes)
+## Step 3: Configure Cursor
 
 ### Find Your Project Path
 
@@ -95,7 +95,7 @@ Copy this path (e.g., `/Users/yourname/databricks-mcp`)
 
 ---
 
-## Step 4: Test! (30 seconds)
+## Step 4: Test!
 
 1. **Restart Cursor completely**
 2. Open Cursor chat
